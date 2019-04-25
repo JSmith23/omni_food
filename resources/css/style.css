@@ -96,6 +96,10 @@ h3 {
   margin-left: 15%;
 }
 
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
 .box p {
   font-size: 90%;
   line-height: 145%;
@@ -185,6 +189,10 @@ h3 {
   border-bottom: 2px solid #e67e22;
 }
 
+.section-meals {
+  padding: 0;
+}
+
 .meals-showcase {
   list-style: none;
   width: 100%;
@@ -200,9 +208,19 @@ h3 {
 .meal-photo {
   width: 100%;
   margin: 0;
+  overflow: hidden;
+  background-color: #000
 }
 
 .meal-photo img {
+  opacity: 0.7;
   width: 100%;
   height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
